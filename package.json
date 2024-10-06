@@ -2,13 +2,26 @@
   "name": "@jvelo/webstash",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "run": "node --env-file=.env index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MPL-2.0",
   "dependencies": {
-    "koa": "^2.15.3"
+    "koa": "^2.15.3",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^13.0.1",
+    "metascraper": "^5.45.24",
+    "metascraper-author": "^5.45.22",
+    "metascraper-date": "^5.45.22",
+    "metascraper-description": "^5.45.22",
+    "metascraper-image": "^5.45.22",
+    "metascraper-publisher": "^5.45.22",
+    "metascraper-title": "^5.45.22",
+    "metascraper-url": "^5.45.22",
+    "postgres": "^3.4.4"
   }
 }
