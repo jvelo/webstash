@@ -6,7 +6,7 @@ import url from 'metascraper-url';
 import author from 'metascraper-author';
 import publisher from 'metascraper-publisher';
 import date from 'metascraper-date';
-
+import shopping from '@samirrayani/metascraper-shopping';
 
 export const metascraper = _metascraper([
     title(),
@@ -15,6 +15,7 @@ export const metascraper = _metascraper([
     url(),
     author(),
     publisher(),
-    date()
+    date(),
+    shopping()
 ]);
 
