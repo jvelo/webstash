@@ -7,12 +7,14 @@ import author from 'metascraper-author';
 import publisher from 'metascraper-publisher';
 import date from 'metascraper-date';
 
+
 export const metascraper = _metascraper([
-    title,
-    image,
-    description,
-    url,
-    author,
-    publisher,
-    date
+    title(),
+    image(),
+    description(),
+    url(),
+    author(),
+    publisher(),
+    date()
 ]);
+

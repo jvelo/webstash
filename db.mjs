@@ -15,6 +15,8 @@ const sql = postgres("postgres://postgres:@localhost:5432/postgres", {
 });
 
 await sql`
+    set client_min_messages=WARNING;
+
     create schema if not exists webstash;
 
     create table if not exists webstash.link_preview (

@@ -5,12 +5,14 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "run": "node --env-file=.env index.js",
+    "start": "node --env-file=.env index.js",
+    "watch": "node --env-file=.env --watch index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MPL-2.0",
   "dependencies": {
+    "@samirrayani/metascraper-shopping": "^1.4.22",
     "koa": "^2.15.3",
     "koa-bodyparser": "^4.4.1",
     "koa-router": "^13.0.1",
